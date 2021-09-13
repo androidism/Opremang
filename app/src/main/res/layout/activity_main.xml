@@ -1,19 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E91E63"
+    android:animationCache="false"
+    android:background="#BED8A0"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="434dp"
+        tools:srcCompat="@drawable/logon0" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="336dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="264dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="Password"
+        android:inputType="textPassword" />
+</RelativeLayout>
